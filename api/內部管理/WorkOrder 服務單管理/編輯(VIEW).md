@@ -1,0 +1,34 @@
+# CPKG-110000-Fuji
+
+## CRM管理 > 客戶管理 API
+
+### 此項目權限依附於 fuji/device-manager/lists
+
+> 編輯(view)
+
+| 項目                      | 內容                       | 說明                |驗證                      |   備註         |
+|---------------------------|----------------------------|----------------------|-----------------|----------------|
+| <b>路徑</b>               | fuji/device-manager/modify    |                        |                |                  |
+| <b>方法</b>               | GET                        |                    |                    |                 |
+| <b>權限</b>               | 檢視                       |                     |                   |                 |
+| <b>參數</b>               |                            |                       |                 |                 |
+|                          | cp11_dce_id             | ID            | 必填,整數               |                 |
+
+> 回傳
+
+| 參數                                                                        | 說明                            | 備註                           |
+|----------------------------------------------------------------------------|--------------------------------|--------------------------------|
+| cp11_dce_id               | ID                            |                                |
+| cp11_dce_brand_name             | 設備品牌                            |                                |
+| cp11_dce_pattern_name             | 設備型號                            |                                |
+| cp11_dce_manufacture_place             | 製造地                            |                                |
+| cp11_dce_discontinued             | 停產                            | 1.是 2.否                               |
+| cp11_dce_supply             | 供料                            | 1.是 2.否                               |
+| cp11_dce_memo             | 備註                            |                                |
+| component             | 零件                            |                                |
+| component[][cp11_cnt_part_no]             | 料號                            |                                |
+| component[][cp11_cnt_part_name]             | 名稱                            |                                |
+| component[][cp11_cnt_quotation]             | 原廠報價                            |                                |
+| component[][cp11_cnt_selling_price]             | 建議售價                            |                                |
+| component[][cp11_cnt_maintenance_hours]             | 維修工時                            |                                |
+| component[][cp11_cnt_maintenance_people_number]             | 維修人次                            |                                |

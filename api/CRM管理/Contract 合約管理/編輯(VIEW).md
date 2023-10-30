@@ -35,3 +35,7 @@
 | customer[cp11_com_customer_name]               | 客戶名稱                            |                                |
 | contract_type               | 合約類型                            |                                |
 | contract_type[cp11_cte_type_name]               | 類型                            |                                |
+| devices               | 設備                            |                                |
+| devices[][cp11_dce_brand_name]               | 設備品牌                            |                                |
+| devices[][cp11_dce_pattern_name]               | 設備型號                            |                                |
+| devices[][cp11_dce_pattern_name][pivot][cp11_cdrn_dce_count]               | 設備數量                            |                                |
